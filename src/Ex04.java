@@ -7,11 +7,50 @@ public class Ex04 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		int n;
+		int n1, n2, n3;
+		System.out.printf("Informe o primeiro número:");
+		n1 = ler.nextInt();
 		
-		for (int i = 0; i < 3; i++) {
-			System.out.println("Digite o " + i + " número: ");
-			n = ler.nextInt();
+		System.out.printf("Informe o segundo número:");
+		n2 = ler.nextInt();
+		
+		System.out.printf("Informe o terceiro número:");
+		n3 = ler.nextInt();
+		
+		
+		
+		if (n1 < n2 && n2 < n3) {
+			System.out.println(n1);
+			System.out.println(n2);
+			System.out.println(n3);
+		}
+
+		if (n1 < n3 && n3 < n2) {
+			System.out.println(n1);
+			System.out.println(n3);
+			System.out.println(n2);
+		}
+		if (n3 < n1 && n1 < n2) {
+			System.out.println(n3);
+			System.out.println(n1);
+			System.out.println(n2);
+		}
+
+		if (n2 < n1 && n1 < n3) {
+			System.out.println(n2);
+			System.out.println(n1);
+			System.out.println(n3);
+		}
+
+		if (n2 < n3 && n3 < n1) {
+			System.out.println(n2);
+			System.out.println(n3);
+			System.out.println(n1);
+		}
+		if (n3 < n2 && n2 < n1) {
+			System.out.println(n3);
+			System.out.println(n2);
+			System.out.println(n1);
 		}
 		
 		
